@@ -1,0 +1,275 @@
+[
+    {
+        "nome": "Jorge",
+        "email": "jorge@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/jorge-perfil.jpg",
+        "posts": 3,
+        "seguidores": 75,
+        "curtidas": 88,
+        "postagens": [
+            {
+                "tipo": "texto",
+                "conteudo": "A vida é feita de pequenos grandes momentos 🌅"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/jorge-foto1.webp"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/jorge-foto2.jpg"
+            }
+        ]
+    },
+    {
+        "nome": "Fábio",
+        "email": "fabio@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/fabio-perfil.png",
+        "posts": 3,
+        "seguidores": 66,
+        "curtidas": 72,
+        "postagens": [
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/fabio-foto1.jpg"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/fabio-foto2.jpg"
+            }
+        ]
+    },
+    {
+        "nome": "Ana",
+        "email": "ana@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/ana-perfil.jpg",
+        "posts": 3,
+        "seguidores": 142,
+        "curtidas": 215,
+        "postagens": [
+            {
+                "tipo": "texto",
+                "conteudo": "✨"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/ana-foto1.jpg"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/ana-foto2.jpg"
+            }
+        ]
+    },
+    {
+        "nome": "Grazi",
+        "email": "grazi@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/grazi-perfil.jpg",
+        "posts": 3,
+        "seguidores": 120,
+        "curtidas": 180,
+        "postagens": [
+            {
+                "tipo": "texto",
+                "conteudo": "Aproveitando o dia para criar coisas novas! 💡✨"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/grazi-foto1.png"
+            },
+            {
+                "tipo": "video",
+                "conteudo": "../imagens/posts/grazi-video1.mp4"
+            }
+        ]
+    },
+    {
+        "nome": "Ester",
+        "email": "ester@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/ester-perfil.jpg",
+        "posts": 3,
+        "seguidores": 95,
+        "curtidas": 132,
+        "postagens": [
+            {
+                "tipo": "texto",
+                "conteudo": "Eu e meus problemas de string 😝"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/ester-foto1.jpg"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/ester-foto2.jpg"
+            },
+            {
+                "tipo": "video",
+                "conteudo": "../imagens/posts/ester-video1.mp4"
+            }
+        ]
+    },
+    {
+        "nome": "Sophia",
+        "email": "sophia@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/sophia-perfil.jpg",
+        "posts": 3,
+        "seguidores": 134,
+        "curtidas": 167,
+        "postagens": [
+            {
+                "tipo": "texto",
+                "conteudo": "Curtindo cada momento dessa jornada 💫💜"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/sophia-foto1.jpg"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/sophia-foto2.jpg"
+            }
+        ]
+    },
+    {
+        "nome": "Bia",
+        "email": "bia@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/bia-perfil.jpg",
+        "posts": 3,
+        "seguidores": 110,
+        "curtidas": 145,
+        "postagens": [
+            {
+                "tipo": "texto",
+                "conteudo": "Deixo a vida levar, como aprendi num samba. Não vou olhar pra trás, corro, que a fila anda 🌻"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/bia-foto1.jpg"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/bia-foto2.jpg"
+            }
+        ]
+    },
+    {
+        "nome": "Gui",
+        "email": "gui@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/gui-perfil.jpg",
+        "posts": 3,
+        "seguidores": 2000000000,
+        "curtidas": 320,
+        "postagens": [
+            {
+                "tipo": "texto",
+                "conteudo": "..."
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/gui-foto1.jpg"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/gui-foto2.jpg"
+            }
+        ]
+    },
+    {
+        "nome": "Wallace",
+        "email": "wallace@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/wallace-perfil.jpg",
+        "posts": 3,
+        "seguidores": 87,
+        "curtidas": 99,
+        "postagens": [
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/wallace-foto1.jpeg"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/wallace-foto2.jpg"
+            }
+        ]
+    },
+    {
+        "nome": "Manu",
+        "email": "manu@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/manu-perfil.jpg",
+        "posts": 3,
+        "seguidores": 128,
+        "curtidas": 156,
+        "postagens": [
+            {
+                "tipo": "texto",
+                "conteudo": "Gratiluz 💖"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/manu-foto2.jpg"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/manu-foto1.jpeg"
+            }
+        ]
+    },
+    {
+        "nome": "Lele",
+        "email": "lele@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/lele-perfil.jpg",
+        "posts": 3,
+        "seguidores": 102,
+        "curtidas": 140,
+        "postagens": [
+            {
+                "tipo": "texto",
+                "conteudo": "Amo minha gêmea @ester 💗"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/lele-foto2.jpg"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/lele-foto1.jpg"
+            }
+        ]
+    },
+    {
+        "nome": "Elo",
+        "email": "elo@email.com",
+        "senha": "dsw1@2025",
+        "fotoPerfil": "../imagens/fotos-perfil/elo-perfil.jpg",
+        "posts": 3,
+        "seguidores": 118,
+        "curtidas": 150,
+        "postagens": [
+            {
+                "tipo": "texto",
+                "conteudo": "Ta gata 😉"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/elo-foto1.jpg"
+            },
+            {
+                "tipo": "imagem",
+                "conteudo": "../imagens/posts/elo-foto2.jpg"
+            }
+        ]
+    }
+    
+]

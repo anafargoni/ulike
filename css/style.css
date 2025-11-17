@@ -1,0 +1,491 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #000;
+}
+
+/* -------- Login -------- */
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#formLogin input {
+  width: 250px;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+#formLogin button {
+  background-color: #ff1744;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#formLogin button:hover {
+  background-color: #cc1539;
+}
+
+/* -------- Sidebar -------- */
+.barra-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  background: #ff898f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.barra-lateral a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s, color 0.3s;
+  font-size: 1.5em;
+}
+
+.barra-lateral a:hover, .barra-lateral a.ativo {
+  background: #ff1744;
+}
+
+.perfil-lateral {
+  margin-top: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.perfil-lateral img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* -------- Layout principal -------- */
+main {
+  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  min-height: 100vh; /* ocupa altura total */
+  box-sizing: border-box;
+}
+
+.conteudo-central {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; /* centraliza horizontalmente */
+}
+
+.foto-perfil {
+  width: 10rem;
+  border-radius: 100%;
+  box-shadow: 5px 1px 8px #888888;
+}
+
+.informacoes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #ff1744;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc1539;
+}
+
+/* -------- Feed -------- */
+
+.feed {
+  margin-top: 30px;
+}
+
+.postagem {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* cabeçalho do post (avatar + nome) */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.post-header img.post-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.nome-usuario {
+  font-weight: bold;
+  color: #333;
+}
+
+.postagem img,
+.postagem video {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.acoes-postagem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.acoes-postagem button {
+  background: none;
+  border: none;
+  color: #ff1744;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.acoes-postagem button:hover {
+  transform: scale(1.1);
+}
+
+.postagem button {
+  margin-right: 10px;
+  margin-top: 8px;
+  background: #ff1744;
+  color: white;
+  border: none;
+  padding: 8px 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.postagem button:hover {
+  background: #cc1539;
+}
+
+.post-midias {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.post-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.comentario {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.avatar-comentario {
+    width: 32px;
+    height: 32px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.conteudo-comentario {
+    flex: 1;
+    word-wrap: break-word;
+}
+
+.conteudo-comentario strong {
+    margin-right: 4px;
+}
+
+/* -------- Carrossel -------- */
+.carrossel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.faixa-carrossel {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.item-carrossel {
+  min-width: 100%;
+}
+
+.item-carrossel img,
+.item-carrossel video {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.botao-carrossel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.botao-carrossel:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.anterior { left: 10px; }
+.proximo { right: 10px; }
+
+/* -------- Modal -------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-modal {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.fechar {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color:   #fffefe;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.preview img, .preview video {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  height: 60px;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+.modal .conteudo-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centraliza vertical */
+  align-items: center;       /* centraliza horizontal */
+  text-align: center;
+}
+
+.modal textarea {
+  width: 90%;                
+  max-width: 600px;          
+  min-height: 120px;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.modal button {
+  margin-top: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .barra-lateral {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 0;
+    top: auto;
+  }
+
+  main {
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+}
+
+/* CARREGAMENTO
+/* Tela inteira escura */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Container das bolinhas */
+.loader {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+/* Bolinhas */
+.ball {
+  width: 15px;
+  height: 15px;
+  background:  #ff1744;
+  ;
+  border-radius: 50%;
+  animation: wave 0.6s infinite ease-in-out;
+}
+
+/* Delay pra formar a ondinha */
+.ball:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.ball:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Animação */
+@keyframes wave {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: none; /* começa escondido */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.ball {
+  width: 15px;
+  height: 15px;
+  background:  #ff1744;
+  margin: 0 8px;
+  border-radius: 50%;
+  animation: wave 0.6s infinite alternate;
+}
+
+.ball:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.ball:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes wave {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+/* Espaço entre informações do perfil e as postagens */
+.conteudo-central {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* afasta os elementos internos */
+}
+
+button#btnSeguir, 
+button.botao-seguir {
+    margin-bottom: 15px; /* espaço extra embaixo */
+}

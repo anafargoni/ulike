@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ULike</title>
+<link rel="icon" href="./imagens/logo_colorida-semfundo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-----------------------------LOGIN--------------------------->
+  <div class="login">  
+  <h2>Login</h2>
+    <form id="formLogin">
+        <input type="email" id="email" placeholder="Email" required><br><br>
+        <input type="password" id="senha" placeholder="Senha" required><br><br>
+        <button class="btn btn-primary" type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <!-- OVERLAY DE CARREGAMENTO -->
+  <div id="loadingScreen" class="loading-screen" style="display: none;">
+    <div class="loader">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+    </div>
+  </div>
+
+  <!-----------------------------FEED--------------------------->
+  <!-- Barra lateral -->
+  <nav class="barra-lateral">
+    
+    <a href="#" id="botao-home" class="ativo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+      </svg>
+    </a>
+    <a href="#" id="botao-fotos">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+        <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0"/>
+      </svg>
+    </a>
+    <a href="#" id="botao-videos">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z"/>
+      </svg>
+    </a>
+    <a href="#" id="botao-texto">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+        <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+      </svg>
+    </a>
+    <div class="perfil-lateral">
+      <img src="https://i.pravatar.cc/40" alt="perfil pessoal">
+    </div>
+    <button onclick="logout()">Sair</button>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <div class="conteudo-central">
+      <section class="perfil" id="secao-perfil">
+        <img src="imagens/foto-de-perfil.png" alt="Foto de Perfil" class="foto-perfil">
+        <h2 id="nome-usuario">@usuario</h2>
+
+        <div class="informacoes">
+          <p><strong id="qtd-posts">0</strong><br>Postagens</p>
+          <p><strong id="qtd-seguidores">0</strong><br>Seguidores</p>
+          <p><strong id="qtd-curtidas">0</strong><br>Curtidas</p>
+        </div>
+
+        <button id="botao-seguir">Seguir</button>
+      </section>
+
+      <h1 id="titulo-feed">Feed</h1>
+      <div id="feed" class="feed"></div>
+    </div>
+  </main>
+
+  <!-- Modal de postagem -->
+  <div id="modal-postagem" class="modal">
+    <div class="conteudo-modal">
+      <span id="fechar-modal" class="fechar">&times;</span>
+      <h2 id="titulo-modal">Nova postagem</h2>
+
+      <input type="file" id="entrada-arquivo" accept="image/*,video/*" multiple>
+      <div id="preview" class="preview"></div>
+      <textarea id="legenda" placeholder="Digite aqui..."></textarea>
+
+      <button id="botao-postar">Postar</button>
+    </div>
+  </div>
+  
+  <!-- Modal de Comentários -->
+  <div id="modal-comentarios" class="modal">
+    <div class="conteudo-modal">
+      
+      <span id="fechar-modal-comentarios" class="fechar">&times;</span>
+
+      <h2>Comentários</h2>
+
+      <div id="lista-comentarios"></div>
+
+      <textarea id="novo-comentario" placeholder="Escreva seu comentário..."></textarea>
+
+      <button id="botao-enviar-comentario">Enviar</button>
+
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
